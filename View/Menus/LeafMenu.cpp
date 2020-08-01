@@ -24,7 +24,10 @@ void LeafMenu::run() {
     }
 
     else if(name == "Drop Course"){
-
+        string id,cn;
+        cout<<" Enter your student id and name of the course you want to drop"<<endl;
+        cin>>id>>cn;
+        controller.dropCourse(id,cn);
     }
 
     else if(name == "Show Student Courses In Current Semester"){

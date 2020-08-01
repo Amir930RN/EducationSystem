@@ -28,6 +28,7 @@ public:
     void addCourse(std::string courseName, std::string profLast, std::string semester,
             std::vector<std::string> pre);
     void takeCourse(const std::string& studentID, const std::string& courseName);
+    void dropCourse(const std::string& studentID, const std::string& courseName);
     Student& findStudent(std::string ID);
 
     const std::string &getCurrentSemester() const;

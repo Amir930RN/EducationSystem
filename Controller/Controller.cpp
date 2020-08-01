@@ -152,6 +152,16 @@ void Controller:: takeCourse(const std::string& studentID, const std::string& co
     throw invalid_argument("The Course dose not exits!");
 }
 
+void Controller:: dropCourse(const std::string& studentID, const std::string& courseName){
+
+    if (!inStudents(studentID)) throw invalid_argument("The Student was not found!!");
+
+    if(inCourses(courseName)){
+        findStudent(studentID).currentSemesterCourses.erase(studentID);
+        cout<<"Course has dropped successfully!"<<endl;
+    }
+    throw invalid_argument("The Course dose not exits!");
+}
 
 void Controller::showSemesterCourses(const std::string& semester ) const {
 
