@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/User/CLionProjects/TA 19/Controller/Controller.cpp" "/cygdrive/c/Users/User/CLionProjects/TA 19/cmake-build-debug/CMakeFiles/TA_19.dir/Controller/Controller.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA 19/Model/Course.cpp" "/cygdrive/c/Users/User/CLionProjects/TA 19/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Course.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA 19/Model/Person.cpp" "/cygdrive/c/Users/User/CLionProjects/TA 19/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Person.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA 19/Model/Professor.cpp" "/cygdrive/c/Users/User/CLionProjects/TA 19/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Professor.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA 19/Model/Student.cpp" "/cygdrive/c/Users/User/CLionProjects/TA 19/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Student.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA 19/View/Menus/CommandsFromFileMenu.cpp" "/cygdrive/c/Users/User/CLionProjects/TA 19/cmake-build-debug/CMakeFiles/TA_19.dir/View/Menus/CommandsFromFileMenu.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA 19/View/Menus/InternalMenu.cpp" "/cygdrive/c/Users/User/CLionProjects/TA 19/cmake-build-debug/CMakeFiles/TA_19.dir/View/Menus/InternalMenu.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA 19/View/Menus/LeafMenu.cpp" "/cygdrive/c/Users/User/CLionProjects/TA 19/cmake-build-debug/CMakeFiles/TA_19.dir/View/Menus/LeafMenu.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA 19/View/Menus/Menu.cpp" "/cygdrive/c/Users/User/CLionProjects/TA 19/cmake-build-debug/CMakeFiles/TA_19.dir/View/Menus/Menu.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA 19/View/View.cpp" "/cygdrive/c/Users/User/CLionProjects/TA 19/cmake-build-debug/CMakeFiles/TA_19.dir/View/View.cpp.o"
-  "/cygdrive/c/Users/User/CLionProjects/TA 19/main.cpp" "/cygdrive/c/Users/User/CLionProjects/TA 19/cmake-build-debug/CMakeFiles/TA_19.dir/main.cpp.o"
+  "E:/Amir/University/Term 2/AP/EducationSystem/Controller/Controller.cpp" "E:/Amir/University/Term 2/AP/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Controller/Controller.cpp.obj"
+  "E:/Amir/University/Term 2/AP/EducationSystem/Model/Course.cpp" "E:/Amir/University/Term 2/AP/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Course.cpp.obj"
+  "E:/Amir/University/Term 2/AP/EducationSystem/Model/Person.cpp" "E:/Amir/University/Term 2/AP/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Person.cpp.obj"
+  "E:/Amir/University/Term 2/AP/EducationSystem/Model/Professor.cpp" "E:/Amir/University/Term 2/AP/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Professor.cpp.obj"
+  "E:/Amir/University/Term 2/AP/EducationSystem/Model/Student.cpp" "E:/Amir/University/Term 2/AP/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/Model/Student.cpp.obj"
+  "E:/Amir/University/Term 2/AP/EducationSystem/View/Menus/CommandsFromFileMenu.cpp" "E:/Amir/University/Term 2/AP/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/View/Menus/CommandsFromFileMenu.cpp.obj"
+  "E:/Amir/University/Term 2/AP/EducationSystem/View/Menus/InternalMenu.cpp" "E:/Amir/University/Term 2/AP/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/View/Menus/InternalMenu.cpp.obj"
+  "E:/Amir/University/Term 2/AP/EducationSystem/View/Menus/LeafMenu.cpp" "E:/Amir/University/Term 2/AP/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/View/Menus/LeafMenu.cpp.obj"
+  "E:/Amir/University/Term 2/AP/EducationSystem/View/Menus/Menu.cpp" "E:/Amir/University/Term 2/AP/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/View/Menus/Menu.cpp.obj"
+  "E:/Amir/University/Term 2/AP/EducationSystem/View/View.cpp" "E:/Amir/University/Term 2/AP/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/View/View.cpp.obj"
+  "E:/Amir/University/Term 2/AP/EducationSystem/main.cpp" "E:/Amir/University/Term 2/AP/EducationSystem/cmake-build-debug/CMakeFiles/TA_19.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
