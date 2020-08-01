@@ -15,6 +15,8 @@ public:
     DoubleMajorStudent(const std::string& studentId, std::string first, std::string last , double workHours,
             std::vector<std::string> passedCourses, std::map<std::string, double> currentSemesterCourses,
                        std::string major2);
+    DoubleMajorStudent(const std::string& studentId, std::string first, std::string last , double workHours,
+                       std::vector<std::string> passedCourses, std::map<std::string, double> currentSemesterCourses);
 
     double calculateSalary() const override;
 

@@ -4,8 +4,10 @@
 #include <string>
 #include <vector>
 #include "../Model/Student.h"
+#include "../Model/DoubleMajorStudent.h"
 #include "../Model/Professor.h"
 #include "../Model/Course.h"
+
 
 class Controller {
     friend class Menu;
@@ -16,6 +18,7 @@ private:
     std::vector<Professor> professors;
     std::vector<Course> courses;
     std::vector<Course> currentSemesterCourses;
+    std::vector<Person*> mathClass;
     Controller() = default;
 
 public:
@@ -36,6 +39,10 @@ public:
     const std::string &getCurrentSemester() const;
 
     void showSemesterCourses(const std::string& semester ) const;
+
+    void readMembersFromFile();
+    double calculateTotalSalary() const;
+
 
     bool inStudents(const std::string& ID) const;
     bool inProfessors(const std::string& ID) const;

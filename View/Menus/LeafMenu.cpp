@@ -88,6 +88,15 @@ void LeafMenu::run() {
     else if(name == "Show All Courses"){
 
     }
+    else if(name == "Read Members From File"){
+
+        controller.readMembersFromFile();
+
+
+    }
+    else if(name == "Calculate Total Salary"){
+        cout<<controller.calculateTotalSalary()<<endl;
+    }
 
     else{
         throw invalid_argument("This Menu hase not been defined!!");

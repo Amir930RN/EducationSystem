@@ -2,7 +2,10 @@
 #include <fstream>
 #include <vector>
 #include <map>
+#include <sstream>
+#include <iterator>
 #include <stdexcept>
+
 
 using namespace std;
 
@@ -196,3 +199,52 @@ void Controller::showSemesterCourses(const std::string& semester ) const {
 const std::string &Controller::getCurrentSemester() const {
     return currentSemester;
 }
+
+
+void Controller::readMembersFromFile() {
+
+    string command;
+    char * cmd = new char[1000];
+    ifstream input("members.txt");
+
+    for(size_t i{1}; i <= 6; ++i){
+        try {
+            input.getline(cmd, 1000);
+            command = (string) cmd;
+            istringstream iss{command};
+            vector<string> results{istream_iterator<string>{iss}, istream_iterator<string>()};
+
+            if (results[0] == "P") {
+                auto* p = new Professor(results[1],results[2],results[3],stod(results[5]),results[4]);
+                mathClass.push_back(p);
+
+            } else if (results[0] == "S") {
+                auto* s = new Student(results[1],results[2],results[3],stod(results[4]),vector<string>{}, map<string, double>{});
+                mathClass.push_back(s);
+
+            } else if (results[0] == "D") {
+                auto* s = new DoubleMajorStudent(results[1],results[2],results[3],stod(results[4]),vector<string>{}, map<string, double>{});
+                mathClass.push_back(s);
+            }else {
+                throw invalid_argument("Error!");
+            }
+        }
+        catch( const invalid_argument& e){
+            cout << e.what() << endl;
+        }
+
+    }
+
+}
+
+
+double Controller::calculateTotalSalary() const {
+
+    double sum = 0;
+    for( auto& p : mathClass ){
+        sum+=p->calculateSalary();
+    }
+
+
+}
+
