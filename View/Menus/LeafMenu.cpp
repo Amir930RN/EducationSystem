@@ -31,7 +31,10 @@ void LeafMenu::run() {
     }
 
     else if(name == "Show Student Courses In Current Semester"){
-
+        string id;
+        cout<<" Enter your student id"<<endl;
+        cin>>id;
+        controller.showStudentCoursesInCurrentSemester(id);
     }
 
     else if(name == "Calculate Student Salary"){

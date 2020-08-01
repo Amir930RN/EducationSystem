@@ -141,6 +141,15 @@ Student& Controller:: findStudent(string ID){
     throw invalid_argument("The Student was not found!!");
 }
 
+Course& Controller:: findCourse(const string& name){
+    for( auto& c : courses ){
+        if(c.courseName == name){
+            return c;
+        }
+    }
+    throw invalid_argument("The Course was not found!!");
+}
+
 void Controller:: takeCourse(const std::string& studentID, const std::string& courseName){
 
     if (!inStudents(studentID)) throw invalid_argument("The Student was not found!!");
@@ -161,6 +170,16 @@ void Controller:: dropCourse(const std::string& studentID, const std::string& co
         cout<<"Course has dropped successfully!"<<endl;
     }
     throw invalid_argument("The Course dose not exits!");
+}
+
+void Controller:: showStudentCoursesInCurrentSemester(const std::string& studentID){
+
+    if (!inStudents(studentID)) throw invalid_argument("The Student was not found!!");
+    Student st = findStudent(studentID);
+    for ( auto& c : st.currentSemesterCourses ) {
+        cout<<findCourse(c.first)<<endl;
+    }
+
 }
 
 void Controller::showSemesterCourses(const std::string& semester ) const {
