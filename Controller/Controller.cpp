@@ -145,3 +145,19 @@ void Controller:: takeCourse(const std::string& studentID, const std::string& co
         findStudent(studentID).currentSemesterCourses.insert({courseName, 0});
     }
 }
+
+
+void Controller::showSemesterCourses(const std::string& semester ) const {
+
+    for( auto& c : courses ){
+        if(c.semester == semester ){
+            cout<<c<<endl;
+        }
+    }
+
+}
+
+
+const std::string &Controller::getCurrentSemester() const {
+    return currentSemester;
+}

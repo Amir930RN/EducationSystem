@@ -30,6 +30,9 @@ public:
     void takeCourse(const std::string& studentID, const std::string& courseName);
     Student& findStudent(std::string ID);
 
+    const std::string &getCurrentSemester() const;
+
+    void showSemesterCourses(const std::string& semester ) const;
 
     bool inStudents(const std::string& ID) const;
     bool inProfessors(const std::string& ID) const;

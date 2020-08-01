@@ -11,7 +11,7 @@ void LeafMenu::run() {
     setCurrentMenu(parent);
 
     if(name == "Show This Semester Courses"){
-
+        controller.showSemesterCourses(controller.getCurrentSemester());
     }
 
     else if(name == "Take Course"){
