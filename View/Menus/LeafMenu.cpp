@@ -16,6 +16,11 @@ void LeafMenu::run() {
 
     else if(name == "Take Course"){
 
+        string id,cn;
+        cout<<" Enter your student id and name of the course you want to take"<<endl;
+        cin>>id>>cn;
+        controller.takeCourse(id,cn);
+
     }
 
     else if(name == "Drop Course"){

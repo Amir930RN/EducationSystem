@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <map>
+#include <stdexcept>
 
 using namespace std;
 
@@ -141,9 +142,14 @@ Student& Controller:: findStudent(string ID){
 }
 
 void Controller:: takeCourse(const std::string& studentID, const std::string& courseName){
+
+    if (!inStudents(studentID)) throw invalid_argument("The Student was not found!!");
+
     if(inCourses(courseName)){
         findStudent(studentID).currentSemesterCourses.insert({courseName, 0});
+        cout<<"Course has added successfully!"<<endl;
     }
+    throw invalid_argument("The Course dose not exits!");
 }
 
 
