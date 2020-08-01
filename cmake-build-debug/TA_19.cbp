@@ -92,6 +92,12 @@
 		<Unit filename="E:/Amir/University/Term 2/AP/EducationSystem/Model/Course.h">
 			<Option target="TA_19"/>
 		</Unit>
+		<Unit filename="E:/Amir/University/Term 2/AP/EducationSystem/Model/DoubleMajorStudent.cpp">
+			<Option target="TA_19"/>
+		</Unit>
+		<Unit filename="E:/Amir/University/Term 2/AP/EducationSystem/Model/DoubleMajorStudent.h">
+			<Option target="TA_19"/>
+		</Unit>
 		<Unit filename="E:/Amir/University/Term 2/AP/EducationSystem/Model/Person.cpp">
 			<Option target="TA_19"/>
 		</Unit>

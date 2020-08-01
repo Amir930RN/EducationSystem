@@ -26,6 +26,8 @@ public:
 
     void setPassedCourses(const std::vector<std::string> &passedCourses);
 
+    void setStudentId(const std::string &studentId);
+
     void setCurrentSemesterCourses(const std::map<std::string, double> &currentSemesterCourses);
 
 };
